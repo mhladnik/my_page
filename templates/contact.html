@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}
+
+    <title>Work with me | Maja Hladnik</title>
+
+{% endblock title %}
+
+{% block content %}
+
+<!-- contact form -->
+
+<div class="container-fluid child">
+    <div class="row justify-content-md-center">
+        <div class="col-md-4 pt-3">
+            <h2 class="naslov_velik" align="center">WORK WITH ME</h2>
+            <img id=maja class="rounded-circle center mt-3" src="/static/img/maja.jpg">
+            <input class="form-control mt-5 mb-3" placeholder="Your name">
+            <input class="form-control mb-3" placeholder="Your email">
+            <textarea class="form-control mb-4" id="exampleFormControlTextarea1" rows="6"
+                      placeholder="Message"></textarea>
+            <div class="d-grid gap-3 col-2 mx-auto mt-3 mb-5">
+                <button class="btn" type="button">Submit</button>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}

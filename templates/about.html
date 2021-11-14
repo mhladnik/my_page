@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}
+
+    <title>My story | Maja Hladnik</title>
+
+{% endblock title %}
+
+{% block content %}
+
+<!-- opis -->
+
+<div class="container">
+    <div class="row">
+        <div class="col" align="center">
+            <img class="about_img" src="/static/img/m1.jpeg">
+        </div>
+        <div class="col premik">
+            <p><b>Name:</b> Maja Hladnik</p>
+            <p><b>Age:</b> {{ age }}</p>
+            <p><b>Education:</b> Bachelor's degree in Education of mathematics and computer science</p>
+            <p><b>Hobbies:</b> Running, programming, creating stuff </p>
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}

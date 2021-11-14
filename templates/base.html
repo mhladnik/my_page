@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+
+    {% block title %}
+
+    {% endblock title %}
+
+
+    <!-- Bootstrap CSS -->
+    <link href="/static/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Zadnji CSS obvelja -->
+    <link href="/static/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital@0;1&display=swap" rel="stylesheet">
+
+    <!-- JavaScript files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="/static/bootstrap/js/bootstrap.js"></script>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a id=logo class="navbar-brand" href="/">MAJA HLADNIK</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/about">MY STORY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">WORK WITH ME</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+{% block content %}
+
+{% endblock content %}
+
+<hr>
+
+<!--noga-->
+<div class="container">
+    <div class="row">
+        <div class="col" align="center">
+            <a href="https://www.instagram.com/majahladnik/"><img src="/static/img/instagram.png/" class="icon"
+                                                                  alt="Responsive image"></a>
+            <a href="https://github.com/mhladnik"><img src="/static/img/github.png/" class="icon"
+                                                       alt="Responsive image"></a>
+            <a href="https://si.linkedin.com/in/maja-hladnik-ba0b10214"><img src="/static/img/linkedin.png/"
+                                                                             class="icon"
+                                                                             alt="Responsive image"></a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col pt-2" align="center">
+            <p class="besedilo"> Maja Hladnik </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
